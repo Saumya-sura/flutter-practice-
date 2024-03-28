@@ -8,6 +8,7 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Material( 
+      child:SingleChildScrollView(
       child: Column(
         children: [
           Image.asset("assets/images/login_image.png",
@@ -51,7 +52,7 @@ class Login extends StatelessWidget {
           ),
           ElevatedButton(onPressed:(){
             print("Helo");
-            
+
           } ,
           style: TextButton.styleFrom(),
            child: Text("Login"),
@@ -62,6 +63,6 @@ class Login extends StatelessWidget {
         
       ),
 
-          );
+    ));
   }
 }
