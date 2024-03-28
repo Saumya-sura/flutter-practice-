@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Lato',
       ),
      routes: {
-      "/":(context)=>const Login(),
+      "/":(context) => const Login(),
       "/home":(context)=>const Home(),
      },
        

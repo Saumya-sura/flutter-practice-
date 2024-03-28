@@ -21,8 +21,47 @@ class Login extends StatelessWidget {
           fontWeight: FontWeight.bold,
         ),
         ),
+        SizedBox(
+          height: 20.0,
+          ),
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: 10,horizontal: 10),
+          child: Column(
+            children: [
+              TextFormField(
+                decoration: InputDecoration( 
+                  hintText: "Enter username",
+                  labelText: "Username",
+              
+                ),
+              ),
+            ],
+          ),
+        ),
+        TextFormField(
+          obscureText: true,
+          decoration: InputDecoration(
+           
+            hintText: "Enter password",
+            labelText: "Password",
+          ),
+        ),
+         SizedBox(
+          height: 20.0,
+          ),
+          ElevatedButton(onPressed:(){
+            print("Helo");
+            
+          } ,
+          style: TextButton.styleFrom(),
+           child: Text("Login"),
+           
+           )
         ],
+        
+        
       ),
-    );
+
+          );
   }
 }
